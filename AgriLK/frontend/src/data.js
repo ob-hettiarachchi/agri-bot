@@ -2,7 +2,7 @@ const data = {
   products: [
     {
       name: 'Carrot',
-      slug: 'Carrot-slug',
+      slug: 'Carrot',
       category: 'Vegetables',
       image: '/images/carrot.png',
       price: 130,

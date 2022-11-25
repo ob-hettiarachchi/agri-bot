@@ -1,7 +1,7 @@
 const data = {
   products: [
     {
-      _id: '1',
+      //_id: '1',
       name: 'Carrot',
       slug: 'Carrot',
       category: 'Vegetables',
@@ -15,7 +15,7 @@ const data = {
         'Organic cultivated carrot for whole sale and retail prices.',
     },
     {
-      _id: '2',
+      //_id: '2',
       name: 'Pumpkin',
       slug: 'Pumpkin',
       category: 'Vegetables',
@@ -29,7 +29,7 @@ const data = {
         'Organic cultivated Pumpkin for whole sale and retail prices.',
     },
     {
-      _id: '3',
+      //_id: '3',
       name: 'Beans',
       slug: 'Beans',
       category: 'Vegetables',
@@ -42,7 +42,7 @@ const data = {
       description: 'Organic cultivated Beans for whole sale and retail prices.',
     },
     {
-      _id: '4',
+      //_id: '4',
       name: 'Cabbage',
       slug: 'Cabbage',
       category: 'Vegetables',

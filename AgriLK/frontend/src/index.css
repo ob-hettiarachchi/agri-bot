@@ -31,6 +31,15 @@ main {
   margin: 1rem;
 }
 
+.rating span {
+  color: #023002;
+}
+
+.btn-primary {
+  background-color: #404040;
+  color: azure;
+}
+
 .product img {
   width: 300px;
   max-width: 400px;

@@ -8,7 +8,7 @@ const data = {
       price: 130,
       countInStock: 50,
       brand: 'local',
-      rating: 4.5,
+      rating: 2.5,
       numReviews: 300,
       description:
         'Organic cultivated carrot for whole sale and retail prices.',
@@ -44,9 +44,9 @@ const data = {
       category: 'Vegetables',
       image: '/images/Cabbage.jpg',
       price: 130,
-      countInStock: 800,
+      countInStock: 0,
       brand: 'local',
-      rating: 3.5,
+      rating: 1.5,
       numReviews: 50,
       description:
         'Organic cultivated Cabbage for whole sale and retail prices.',

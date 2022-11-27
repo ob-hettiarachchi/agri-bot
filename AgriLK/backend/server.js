@@ -24,11 +24,9 @@ app.use('/api/seed', seedRouter);
 app.use('/api/products', productRouter);
 app.use('/api/users', userRouter);
 
-//app.get('/api/products', (req, res) => {
-  //res.send(data.products);
-//});
-
-
+app.get('/api/products', (req, res) => {
+  res.send(data.products);
+});
 
 app.use((err, req, res, next) => {
   res.status(500).send({ message: err.message });

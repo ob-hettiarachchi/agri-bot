@@ -27,6 +27,7 @@ function Product(props) {
       payload: { ...item, quantity },
     });
   };
+
   return (
     <Card>
       <Link to={`/product/${product.slug}`}>
@@ -37,7 +38,7 @@ function Product(props) {
           <Card.Title>{product.name}</Card.Title>
         </Link>
         <Rating rating={product.rating} numReviews={product.numReviews} />
-        <Card.Title>Rs:{product.price}</Card.Title>
+        <Card.Text>${product.price}</Card.Text>
         {product.countInStock === 0 ? (
           <Button variant="light" disabled>
             Out of stock

@@ -57,9 +57,17 @@ function Rating(props) {
           }
         />
       </span>
+<<<<<<< Updated upstream
       <span>
         <span> {numReviews} reviews</span>
       </span>
+=======
+      {caption ? (
+        <span>{caption}</span>
+      ) : (
+        <span>{' ' + numReviews + ' reviews'}</span>
+      )}
+>>>>>>> Stashed changes
     </div>
   );
 }

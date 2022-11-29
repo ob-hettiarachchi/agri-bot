@@ -7,16 +7,6 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* header {
-  background-color: #0d1b2a;
-  padding: 1rem;
-}
-header a {
-  color: #ffffff;
-  font-weight: bold;
-  text-decoration: none;
-} */
-
 main {
   flex: 1;
 }
@@ -42,10 +32,10 @@ main {
 }
 
 .product img {
-  width: 300px;
+  width: 100%;
   max-width: 400px;
-  height: 400px;
 }
+
 .product-info {
   padding: 1rem;
 }

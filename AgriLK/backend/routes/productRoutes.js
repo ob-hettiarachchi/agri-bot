@@ -18,7 +18,7 @@ productRouter.post(
     const newProduct = new Product({
       name: 'sample name ' + Date.now(),
       slug: 'sample-name-' + Date.now(),
-      image: '/images/p1.jpg',
+      image: '/images/Cabbage.jpg',
       price: 0,
       category: 'sample category',
       brand: 'sample brand',
@@ -31,7 +31,6 @@ productRouter.post(
     res.send({ message: 'Product Created', product });
   })
 );
-
 
 productRouter.put(
   '/:id',
@@ -57,8 +56,6 @@ productRouter.put(
   })
 );
 
-
-
 const PAGE_SIZE = 3;
 
 productRouter.get(
@@ -82,9 +79,6 @@ productRouter.get(
     });
   })
 );
-
-
-
 
 productRouter.get(
   '/search',

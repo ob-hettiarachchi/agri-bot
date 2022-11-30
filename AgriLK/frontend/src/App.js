@@ -20,6 +20,7 @@ import PlaceOrderScreen from './screens/PlaceOrderScreen';
 import OrderScreen from './screens/OrderScreen';
 import OrderHistoryScreen from './screens/OrderHistoryScreen';
 import ProfileScreen from './screens/ProfileScreen';
+import ChatUIScreen from './screens/ChatUIScreen';
 
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
@@ -44,6 +45,9 @@ function App() {
               <Navbar.Toggle aria-controls="basic-navbar-nav" />
               <Navbar.Collapse id="basic-navbar-nav">
                 <Nav className="me-auto  w-100  justify-content-end">
+                  <Link to="/chat" className="nav-link">
+                    Chat
+                  </Link>
                   <Link to="/cart" className="nav-link">
                     Cart
                     {cart.cartItems.length > 0 && (
@@ -88,6 +92,7 @@ function App() {
               <Route path="/signup" element={<SignupScreen />} />
               <Route path="/profile" element={<ProfileScreen />} />
               <Route path="/placeorder" element={<PlaceOrderScreen />} />
+              <Route path="/chat" element={<ChatUIScreen />} />
               <Route path="/order/:id" element={<OrderScreen />}></Route>
               <Route
                 path="/orderhistory"

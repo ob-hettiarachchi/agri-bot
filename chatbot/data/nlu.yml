@@ -29,6 +29,12 @@ nlu:
     - see you around
     - bye bye
     - see you later
+    
+- intent: thank_you
+  examples: |
+    - Thank you
+    - Thanks
+    - thanq
 
 - intent: affirm
   examples: |
@@ -89,3 +95,57 @@ nlu:
     - are you a human?
     - am I talking to a bot?
     - am I talking to a human?
+    - what is your name?
+
+- intent: fertilizer_types
+  examples: |
+    - what are the types of fertilizer used in rice cultivation
+    - what types of fertilizer are used in growing rice
+    - what fertilizer is used to grow rice
+    - what are the fertilizers used in growing rice
+    - fertilizer used in rice production
+    - fertilizer types
+
+- intent: benefits_of_compost
+  examples: |
+    - what are the benefits of compost
+    - benefits of compost fertilizer
+    - why is compost useful
+    - benefits of compost
+
+- intent: contains_of_compost
+  examples: |
+    - what are the contains of compost
+    - what is the composition of compost
+    - what are the main ingredients in compost
+    - contains of compost
+    - ingredients in compost
+
+- intent: benefits_of_liquid_fertilizer
+  examples: |
+    - what are the key benefits of liquid fertilizer
+    - what are the benefits of liquid fertilizer
+    - how is liquid fertilizer benefits in cultivation
+    - benefits of liquid fertilizer
+
+- intent: contains_in_fish_fertilizer
+  examples: |
+    - what is contained in fish fertilizer
+    - what is the composition of fish fertilizer
+    - what are the contains in fish fertilizer
+    - what does fish fertilizer contain
+    - contains of fish fertilizer
+    - ingredients in fish fertilizer
+
+- intent: types_of_organic_fertilizer
+  examples: |
+    - what the types of organic fertilizer
+    - what are some examples of organic fertilizer
+    - what are organic fertilizer
+    - types of organic fertilizer
+
+- intent: get_time
+  examples: |
+    - what is the time now?
+    - show me the time?
+    - time

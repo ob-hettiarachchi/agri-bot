@@ -1,27 +1,46 @@
-# This files contains your custom actions which can be used to run
-# custom Python code.
-#
-# See this guide on how to implement these action:
-# https://rasa.com/docs/rasa/custom-actions
+import datetime
+import json
+from typing import Any, Text, Dict, List
+
+from rasa_sdk import Action, Tracker
+from rasa_sdk.executor import CollectingDispatcher
 
 
-# This is a simple example for a custom action which utters "Hello World!"
+class GetTime(Action):
 
-# from typing import Any, Text, Dict, List
-#
-# from rasa_sdk import Action, Tracker
-# from rasa_sdk.executor import CollectingDispatcher
-#
-#
-# class ActionHelloWorld(Action):
-#
-#     def name(self) -> Text:
-#         return "action_hello_world"
-#
-#     def run(self, dispatcher: CollectingDispatcher,
-#             tracker: Tracker,
-#             domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
-#
-#         dispatcher.utter_message(text="Hello World!")
-#
-#         return []
+    def name(self) -> Text:
+        return "action_get_time"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        currentTime = datetime.datetime.now()
+        msg = currentTime.strftime('%I:%M %p')
+
+        dispatcher.utter_message(text=msg)
+
+        return []
+
+
+class ActionGreetByTime(Action):
+
+    def name(self) -> Text:
+        return "action_Greet_byTime"
+
+    def run(self, dispatcher: CollectingDispatcher,
+            tracker: Tracker,
+            domain: Dict[Text, Any]) -> List[Dict[Text, Any]]:
+
+        currentTime = datetime.datetime.now()
+
+        if currentTime.hour < 12:
+            msg = "Good Morning 🔆"
+        elif currentTime.hour < 18:
+            msg = "Good Afternoon 😊"
+        else:
+            msg = "Good Evening 🌓"
+
+        dispatcher.utter_message(text=msg)
+
+        return []

@@ -5,6 +5,7 @@ stories:
 - story: happy path
   steps:
   - intent: greet
+  - action: action_Greet_byTime
   - action: utter_greet
   - intent: mood_great
   - action: utter_happy
@@ -12,6 +13,7 @@ stories:
 - story: sad path 1
   steps:
   - intent: greet
+  - action: action_Greet_byTime
   - action: utter_greet
   - intent: mood_unhappy
   - action: utter_cheer_up
@@ -23,8 +25,56 @@ stories:
   steps:
   - intent: greet
   - action: utter_greet
+  - action: action_Greet_byTime
   - intent: mood_unhappy
   - action: utter_cheer_up
   - action: utter_did_that_help
   - intent: deny
   - action: utter_goodbye
+
+- story: thanking_path
+  steps:
+  - intent: thank_you
+  - action: utter_welcome
+
+- story: fertilizer_types_path
+  steps:
+  - intent: fertilizer_types
+  - action: utter_fertilizer_types
+  - action: utter_anything_else
+
+- story: benefits_of_compost_path
+  steps:
+  - intent: benefits_of_compost
+  - action: utter_benefits_of_compost
+  - action: utter_anything_else
+
+- story: contains_of_compost_path
+  steps:
+  - intent: contains_of_compost
+  - action: utter_contains_of_compost
+  - action: utter_anything_else
+
+- story: benefits_of_liquid_fertilizer_path
+  steps:
+  - intent: benefits_of_liquid_fertilizer
+  - action: utter_benefits_of_liquid_fertilizer
+  - action: utter_anything_else
+
+- story: contains_in_fish_fertilizer_path
+  steps:
+  - intent: contains_in_fish_fertilizer
+  - action: utter_contains_in_fish_fertilizer
+  - action: utter_anything_else
+
+- story: types_of_organic_fertilizer_path
+  steps:
+  - intent: types_of_organic_fertilizer
+  - action: utter_types_of_organic_fertilizer
+  - action: utter_anything_else
+
+- story: get_time_path
+  steps:
+  - intent: get_time
+  - action: action_get_time
+  - action: utter_anything_else

@@ -8,6 +8,14 @@ intents:
   - mood_great
   - mood_unhappy
   - bot_challenge
+  - thank_you
+  - fertilizer_types
+  - benefits_of_compost
+  - contains_of_compost
+  - benefits_of_liquid_fertilizer
+  - contains_in_fish_fertilizer
+  - types_of_organic_fertilizer
+  - get_time
 
 responses:
   utter_greet:
@@ -27,8 +35,36 @@ responses:
   - text: "Bye"
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+  - text: "I am Agribot, How can I help you?"
+
+  utter_welcome:
+  - text: "Welcome, Happy to help you."
+
+  utter_anything_else:
+  - text: "Anything else?"
+
+  utter_fertilizer_types:
+  - text: "Compost fertilizer, fish fertilizer, Nitrogen fertilizer are the most commonly used fertilizers in rice production."
+
+  utter_benefits_of_compost:
+  - text: "Enriches soil, help to retain soil moisture, suppresses the plant disease and pests."
+
+  utter_contains_of_compost:
+  - text: "Compost generally water 2%, nitrogen 0.5 - 1%, phosphorus & potassium 2%."
+
+  utter_benefits_of_liquid_fertilizer:
+  - text: "Faster application, sooner results, straight application of nutrients on crops are the key benefits."
+
+  utter_contains_in_fish_fertilizer:
+  - text: "Fish fertilizer contains whole fish and carcass products, including bones, scales and skin."
+
+  utter_types_of_organic_fertilizer:
+    - text: "Compost, Compost tea, herbivore manure, fish and seaweed, emulsions and Vermicompost are the main types of organic fertilizers."
 
 session_config:
   session_expiration_time: 60
   carry_over_slots_to_new_session: true
+
+actions:
+  - action_get_time
+  - action_Greet_byTime

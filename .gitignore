@@ -292,3 +292,5 @@ dist
 .pnp.*
 
 .idea/workspace.xml
+*.json
+AgriLK/frontend/package-lock.json

@@ -1,6 +1,6 @@
 import { useNavigate } from 'react-router-dom';
 import React, { useEffect, useRef, useState } from 'react';
-import { auth, db } from '../../firebase';
+import { auth, db } from '../firebase';
 import SendMessage from './SendMessage';
 import './chat.css';
 import axios from 'axios';

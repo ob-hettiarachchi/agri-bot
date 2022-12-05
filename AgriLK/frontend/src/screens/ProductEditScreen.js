@@ -55,14 +55,14 @@ export default function ProductEditScreen() {
       try {
         dispatch({ type: 'FETCH_REQUEST' });
         const { data } = await axios.get(`/api/products/${productId}`);
-        setName(data.name);
-        setSlug(data.slug);
-        setPrice(data.price);
+        setName();
+        setSlug();
+        setPrice();
         setImage(data.image);
         setCategory(data.category);
-        setCountInStock(data.countInStock);
-        setBrand(data.brand);
-        setDescription(data.description);
+        setCountInStock();
+        setBrand();
+        setDescription();
         dispatch({ type: 'FETCH_SUCCESS' });
       } catch (err) {
         dispatch({

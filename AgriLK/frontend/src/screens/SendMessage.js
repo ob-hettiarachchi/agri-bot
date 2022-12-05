@@ -14,7 +14,7 @@ export default function SendMessage({ scroll }) {
 
   async function sendRasaMessage(e) {
     e.preventDefault();
-    const { uid, photoURL } = auth.currentUser;
+    //const { uid, photoURL } = auth.currentUser;
     let inputMsg = document.getElementById('chatInput').value.toString();
     let msgType = 'user';
 
@@ -22,8 +22,8 @@ export default function SendMessage({ scroll }) {
       .collection('messages')
       .add({
         text: inputMsg,
-        photoURL,
-        uid,
+        //photoURL,
+        //uid,
         messageType: msgType,
         createdAt: firebase.firestore.FieldValue.serverTimestamp(),
       })
@@ -71,9 +71,9 @@ export default function SendMessage({ scroll }) {
             async function dbSave(replyText, resImg) {
               await db.collection('messages').add({
                 text: replyText,
-                photoURL,
+                //photoURL,
                 resImg: resImg,
-                uid,
+                //uid,
                 messageType: msgType,
                 createdAt: firebase.firestore.FieldValue.serverTimestamp(),
               });

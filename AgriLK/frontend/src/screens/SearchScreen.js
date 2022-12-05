@@ -55,7 +55,6 @@ function HomeScreen() {
           </Row>
         )}
       </div>
-      
     </div>
   );
 }
@@ -82,16 +81,16 @@ const reducer = (state, action) => {
 
 const prices = [
   {
-    name: '$1 to $50',
-    value: '1-50',
+    name: 'Rs. 5 to Rs. 500',
+    value: '50-500',
   },
   {
-    name: '$51 to $200',
-    value: '51-200',
+    name: 'Rs. 50 to Rs. 1000',
+    value: '500-1000',
   },
   {
-    name: '$201 to $1000',
-    value: '201-1000',
+    name: 'Rs. 1000 to Rs. 5000',
+    value: '1000-5000',
   },
 ];
 
@@ -181,6 +180,7 @@ export default function SearchScreen() {
       <Row>
         <Col md={3}>
           <h3>Department</h3>
+
           <div>
             <ul>
               <li>
@@ -226,7 +226,6 @@ export default function SearchScreen() {
               ))}
             </ul>
           </div>
-          
         </Col>
         <Col md={9}>
           {loading ? (
@@ -282,8 +281,6 @@ export default function SearchScreen() {
                   </Col>
                 ))}
               </Row>
-
-              
             </>
           )}
         </Col>

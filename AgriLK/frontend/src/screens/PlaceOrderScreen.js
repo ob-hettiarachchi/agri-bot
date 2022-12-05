@@ -127,10 +127,14 @@ export default function PlaceOrderScreen() {
                         ></img>{' '}
                         <Link to={`/product/${item.slug}`}>{item.name}</Link>
                       </Col>
+                      
                       <Col md={3}>
                         <span>{item.quantity}</span>
+                        Kg
                       </Col>
+                      
                       <Col md={3}>Rs{item.price}</Col>
+                      
                     </Row>
                   </ListGroup.Item>
                 ))}

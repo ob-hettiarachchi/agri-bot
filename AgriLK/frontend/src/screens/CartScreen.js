@@ -61,9 +61,10 @@ export default function CartScreen() {
                       <Link to={`/product/${item.slug}`}>{item.name}</Link>
                     </Col>
                     <Col md={3}>
+                      
                       <Button
                         onClick={() =>
-                          updateCartHandler(item, item.quantity - 1)
+                          updateCartHandler(item, item.quantity - 0.5)
                         }
                         variant="light"
                         disabled={item.quantity === 1}
@@ -74,12 +75,13 @@ export default function CartScreen() {
                       <Button
                         variant="light"
                         onClick={() =>
-                          updateCartHandler(item, item.quantity + 1)
+                          updateCartHandler(item, item.quantity + 0.5)
                         }
                         disabled={item.quantity === item.countInStock}
                       >
                         <i className="fas fa-plus-circle"></i>
                       </Button>
+                      Kg
                     </Col>
                     <Col md={3}>Rs:{item.price}</Col>
                     <Col md={2}>

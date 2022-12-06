@@ -50,8 +50,8 @@ function App() {
     <BrowserRouter>
       <div>
         <ToastContainer position="bottom-center" limit={1} />
-        <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+        <header >
+          <Navbar>
             <Container>
               <LinkContainer to="/">
                 <Navbar.Brand>AgriLK</Navbar.Brand>
@@ -60,10 +60,10 @@ function App() {
               <Navbar.Collapse id="basic-navbar-nav">
                 <SearchBox />
                 <Nav className="me-auto  w-100  justify-content-end">
-                  <Link to="/chat" className="nav-link">
+                  <Link style={{color: 'black'}}to="/chat" className="nav-link" >
                     Chat
                   </Link>
-                  <Link to="/cart" className="nav-link">
+                  <Link style={{color: 'black'}} to="/cart" className="nav-link">
                     Cart
                     {cart.cartItems.length > 0 && (
                       <Badge pill bg="danger">
